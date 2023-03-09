@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
-import Board from './Board';
-import { checkForWin } from './Square';
 
 export default class App extends Component {
   render() {
 
-    checkForWin();
 
     return (
       <React.StrictMode>
@@ -14,4 +11,36 @@ export default class App extends Component {
     );
   }
 }
+
+let squareValues = [0,0,0,0,0,0,0,0,0];
+
+
+function Board(){
+  return(
+    <>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+    </>
+  );
+}
+
+function Square(){
+  return <button className = "square">_</button>
+}
+
+
+
 

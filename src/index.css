@@ -1,19 +1,10 @@
-.square {
-    height: 30%;
-    width: 30%;
-    min-width: 200px;
-    min-height: 200px;
+.square{
     background-color: gray;
-    color: black;
-    font-size: 40px;
-    position: static;
+    font-size: large;
 }
 .square:hover{
     background-color: lightblue;
 }
-.Board {
-    height: 100%;
-    width: 100%;
-    min-width: 200px;
-    min-height: 200px;
+*{
+    background-color: antiquewhite;
 }
